@@ -40,15 +40,15 @@ h1, h2, .p-head, .q { font-family: Rye, Georgia, serif; font-weight: 400; letter
   background: rgba(4, 22, 26, .78); backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
 }
-.brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; margin-right: auto; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; flex: none; }
 .badge-ico { width: 34px; height: 34px; color: var(--sun); filter: drop-shadow(0 0 8px rgba(255, 216, 74, .55)); }
 .brand span { display: flex; flex-direction: column; line-height: 1.05; }
 .brand b { font: 800 18px/1 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: 1px; }
 .brand small { font: 600 12px/1.2 'Barlow Condensed', sans-serif; color: var(--teal); text-transform: uppercase; letter-spacing: 4px; }
-.nav { display: flex; gap: 4px; }
-.nav a { color: var(--muted); text-decoration: none; font: 600 16px 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: 1px; padding: 8px 12px; border-radius: 10px; }
+.nav { flex: 1; display: flex; justify-content: space-evenly; gap: 4px; }
+.nav a { flex: 1; text-align: center; max-width: 220px; color: var(--muted); text-decoration: none; font: 600 16px 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: 1px; padding: 8px 12px; border-radius: 10px; }
 .nav a:hover { color: var(--text); background: rgba(46, 230, 214, .08); }
-.pill { display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 99px; border: 1px solid var(--line); color: var(--text); text-decoration: none; font: 700 14px 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: 1px; white-space: nowrap; }
+.pill { flex: none; display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 99px; border: 1px solid var(--line); color: var(--text); text-decoration: none; font: 700 14px 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: 1px; white-space: nowrap; }
 .dot { width: 9px; height: 9px; border-radius: 50%; background: #5d7f80; }
 .is-live .pill { border-color: var(--live); background: rgba(255, 77, 109, .12); }
 .is-live .dot { background: var(--live); box-shadow: 0 0 0 0 rgba(255, 77, 109, .7); animation: pulse 1.6s infinite; }
