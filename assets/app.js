@@ -1,7 +1,13 @@
 // The Faithful Sheriff Clips: live status, the Twitch stage, the next-stream countdown,
 // the Wanted Board (clips.json written by the clipper on Walley) and the Daily Word.
 (function () {
-  const C = window.SHERIFF;
+  // Defaults keep the page working even if config.js fails to load.
+  const C = Object.assign({
+    twitch: 'thefaithfulsheriff', clipsYouTube: 'https://www.youtube.com/@TheFaithfulSheriffClips', clipsChannelId: '',
+    playlists: [], schedule: { days: [1, 2, 3, 4, 5], hour: 15, minute: 0, tz: 'America/New_York' }, clipsFeed: 'clips.json'
+  }, window.SHERIFF || {});
+  // Twitch embeds only run on https pages.
+  if (location.protocol === 'http:' && location.hostname !== 'localhost' && !/^127\./.test(location.hostname)) { location.replace('https://' + location.host + location.pathname + location.search + location.hash); return; }
   const $ = s => document.querySelector(s);
   const host = location.hostname || 'localhost';
   const twitchUrl = 'https://www.twitch.tv/' + C.twitch;
