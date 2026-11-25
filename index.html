@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Faithful Sheriff Clips</title>
+<meta name="description" content="The best moments from The Faithful Sheriff's streams. Bringing the Gospel to Gamers. Watch him live on Twitch, Monday to Friday at 3 PM Eastern.">
+<meta property="og:title" content="The Faithful Sheriff Clips">
+<meta property="og:description" content="Bringing the Gospel to Gamers. Clips daily, live on Twitch Mon to Fri, 3 PM ET.">
+<meta property="og:image" content="og-image.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#04161a">
+<link rel="icon" href="assets/badge.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#stage">Skip to the live stream</a>
+
+<header class="bar">
+  <a class="brand" href="#top" aria-label="The Faithful Sheriff Clips, home">
+    <svg class="badge-ico" viewBox="0 0 100 100" aria-hidden="true"><use href="#star"/></svg>
+    <span><b>The Faithful Sheriff</b><small>Clips</small></span>
+  </a>
+  <nav class="nav" aria-label="Sections">
+    <a href="#stage">Live</a><a href="#board">Clips</a><a href="#word">Daily Word</a><a href="#posse">Follow</a>
+  </nav>
+  <a class="pill" id="pill" href="https://www.twitch.tv/thefaithfulsheriff" target="_blank" rel="noopener"><span class="dot"></span><span class="pill-label">Twitch</span></a>
+</header>
+
+<main id="top">
+  <!-- HERO: heaven-light over the frontier -->
+  <section class="hero">
+    <div class="rays" aria-hidden="true"></div>
+    <div class="clouds" aria-hidden="true"></div>
+    <div class="hero-in">
+      <p class="kicker">Clips from the stream that brings</p>
+      <h1>The Gospel<br><span>to Gamers</span></h1>
+      <p class="lede">Big plays, good laughs and real talk about faith, cut fresh from The Faithful Sheriff's streams. Come hang out live.</p>
+      <div class="cta">
+        <a class="btn btn-live" id="hero-live" href="https://www.twitch.tv/thefaithfulsheriff" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-twitch"/></svg><span>Watch on Twitch</span></a>
+        <a class="btn btn-ghost" href="#board">See the clips</a>
+      </div>
+      <p class="when" id="when">Live Monday to Friday, 3 PM Eastern</p>
+    </div>
+    <svg class="hero-star" viewBox="0 0 100 100" aria-hidden="true"><use href="#star"/></svg>
+  </section>
+
+  <!-- THE STAGE: player + chat, front and center -->
+  <section id="stage" class="stage">
+    <div class="sec-head">
+      <h2><span class="tag" id="stage-tag">On the air</span> The Stage</h2>
+      <p id="stage-sub">Catch him live right here, or open Twitch to follow and chat.</p>
+    </div>
+    <div class="stage-grid">
+      <div class="screen">
+        <div class="frame-glow" aria-hidden="true"></div>
+        <div class="player-wrap" id="player-wrap">
+          <div class="player-fallback">
+            <svg viewBox="0 0 100 100" aria-hidden="true"><use href="#star"/></svg>
+            <p>Loading the stream…</p>
+          </div>
+        </div>
+      </div>
+      <aside class="side">
+        <div class="chat-wrap" id="chat-wrap"></div>
+        <div class="next" id="next-card">
+          <span class="next-label">Next stream</span>
+          <b id="next-time">Mon to Fri, 3 PM ET</b>
+          <div class="countdown" id="countdown" aria-live="polite"></div>
+        </div>
+      </aside>
+    </div>
+    <div class="stage-actions">
+      <a class="btn btn-live" href="https://www.twitch.tv/thefaithfulsheriff" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg><span>Follow on Twitch</span></a>
+      <a class="btn btn-ghost" href="https://www.twitch.tv/thefaithfulsheriff/schedule" target="_blank" rel="noopener">Full schedule</a>
+      <a class="btn btn-ghost" href="https://discord.gg/wstmhCj7mA" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-discord"/></svg><span>Join the Discord</span></a>
+    </div>
+  </section>
+
+  <!-- WANTED BOARD: the clips -->
+  <section id="board" class="board">
+    <div class="sec-head">
+      <h2>The Wanted Board</h2>
+      <p>Today's most wanted moments. Reward: one share with a friend.</p>
+    </div>
+    <div class="filters" id="filters" role="tablist" aria-label="Filter clips"></div>
+    <div class="posters" id="posters"></div>
+    <div class="board-empty" id="board-empty" hidden>
+      <div class="poster poster-empty">
+        <span class="p-head">Wanted</span>
+        <div class="p-photo"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#star"/></svg></div>
+        <b>Fresh clips</b>
+        <small>First posters go up after the next stream. Follow the clips channel so you see them first.</small>
+      </div>
+    </div>
+    <div class="board-more">
+      <a class="btn btn-yt" id="yt-link" href="https://www.youtube.com/@TheFaithfulSheriffClips" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-yt"/></svg><span>All clips on YouTube</span></a>
+      <a class="btn btn-ghost" href="https://www.instagram.com/thefaithfulsheriffclips" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg><span>Clips on Instagram</span></a>
+    </div>
+  </section>
+
+  <!-- DAILY WORD -->
+  <section id="word" class="word">
+    <div class="word-card">
+      <p class="q">Did you talk to God today?</p>
+      <div class="word-choice" id="word-choice">
+        <button class="chip" data-a="yes">Yes, I did</button>
+        <button class="chip" data-a="not-yet">Not yet</button>
+      </div>
+      <p class="word-reply" id="word-reply" aria-live="polite"></p>
+      <blockquote id="verse"><p></p><cite></cite></blockquote>
+      <p class="word-note">A new verse every day. King James Version.</p>
+    </div>
+  </section>
+
+  <!-- THE POSSE: socials -->
+  <section id="posse" class="posse">
+    <div class="sec-head">
+      <h2>Ride with the Posse</h2>
+      <p>Every place The Faithful Sheriff shows up.</p>
+    </div>
+    <div class="tiles">
+      <a class="tile t-twitch" href="https://www.twitch.tv/thefaithfulsheriff" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-twitch"/></svg><span><b>Twitch</b><small>Live Mon to Fri, 3 PM ET</small></span><em>Follow</em></a>
+      <a class="tile t-yt" href="https://www.youtube.com/@TheFaithfulSheriff" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-yt"/></svg><span><b>YouTube</b><small>Daily shorts</small></span><em>Subscribe</em></a>
+      <a class="tile t-tt" href="https://www.tiktok.com/@thefaithfulsheriff" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-tt"/></svg><span><b>TikTok</b><small>@thefaithfulsheriff</small></span><em>Follow</em></a>
+      <a class="tile t-ig" href="https://www.instagram.com/thefaithfulsheriff" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg><span><b>Instagram</b><small>Daily reels</small></span><em>Follow</em></a>
+      <a class="tile t-x" href="https://x.com/TheFaithSheriff" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-x"/></svg><span><b>X</b><small>@TheFaithSheriff</small></span><em>Follow</em></a>
+      <a class="tile t-dc" href="https://discord.gg/wstmhCj7mA" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-discord"/></svg><span><b>Discord</b><small>The community</small></span><em>Join</em></a>
+      <a class="tile t-clips" href="https://www.youtube.com/@TheFaithfulSheriffClips" target="_blank" rel="noopener" data-clips-yt><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#star"/></svg><span><b>Clips channel</b><small>Highlights on YouTube</small></span><em>Subscribe</em></a>
+      <a class="tile t-tip" href="https://streamelements.com/thefaithfulsheriff/tip" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg><span><b>Support</b><small>Never asked for, always appreciated</small></span><em>Tip</em></a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <svg class="foot-star" viewBox="0 0 100 100" aria-hidden="true"><use href="#star"/></svg>
+  <p class="mission">"Plant seeds that the Holy Spirit can water, while gaming and having fun."</p>
+  <p>The clips channel for <a href="https://www.twitch.tv/thefaithfulsheriff" target="_blank" rel="noopener">The Faithful Sheriff</a>, run with his blessing. Clips are family friendly: no drama, no kids' voices.</p>
+  <p class="small">Stream, name and footage belong to The Faithful Sheriff. Something here you want changed or taken down? It comes down the same day: <a href="https://www.instagram.com/thefaithfulsheriffclips" target="_blank" rel="noopener">message the clips team</a>.</p>
+</footer>
+
+<!-- Icons (drawn for this site; no avatars) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="star" viewBox="0 0 100 100">
+      <path d="M50 4l10.6 26.4 28.2 2-21.7 18.1 6.9 27.5L50 62.9 26 78l6.9-27.5L11.2 32.4l28.2-2z" fill="currentColor"/>
+      <circle cx="50" cy="4" r="4" fill="currentColor"/><circle cx="88.8" cy="32.4" r="4" fill="currentColor"/><circle cx="74" cy="78" r="4" fill="currentColor"/><circle cx="26" cy="78" r="4" fill="currentColor"/><circle cx="11.2" cy="32.4" r="4" fill="currentColor"/>
+      <circle cx="50" cy="44" r="15" fill="var(--star-hole, #04161a)"/>
+      <path d="M47.5 33h5v8.5H61v5h-8.5V56h-5v-9.5H39v-5h8.5z" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-twitch" viewBox="0 0 24 24"><path fill="currentColor" d="M4.3 3 3 6.4v13.1h4.5V22h2.6l2.4-2.5h3.7l4.8-4.9V3H4.3zm15.1 10.9-2.8 2.9h-4.5l-2.4 2.4v-2.4H5.9V4.8h13.5v9.1zM16.6 8v4.9h-1.7V8h1.7zm-4.5 0v4.9h-1.7V8h1.7z"/></symbol>
+    <symbol id="i-yt" viewBox="0 0 24 24"><path fill="currentColor" d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15V9l5.8 3-5.8 3z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><path fill="currentColor" d="M12 7.3A4.7 4.7 0 1 0 16.7 12 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm6-7.9a1.1 1.1 0 1 1-1.1-1.1A1.1 1.1 0 0 1 18 7.1zM21.9 8.2a5.4 5.4 0 0 0-1.5-3.9 5.4 5.4 0 0 0-3.9-1.5C15 2.7 9 2.7 7.5 2.8a5.4 5.4 0 0 0-3.9 1.5 5.4 5.4 0 0 0-1.5 3.9C2 9.7 2 15.3 2.1 16.8a5.4 5.4 0 0 0 1.5 3.9 5.4 5.4 0 0 0 3.9 1.5c1.5.1 7.5.1 9 0a5.4 5.4 0 0 0 3.9-1.5 5.4 5.4 0 0 0 1.5-3.9c.1-1.5.1-7.1 0-8.6zm-2 10.4a3 3 0 0 1-1.7 1.7c-1.2.5-4 .4-6.2.4s-5 .1-6.2-.4a3 3 0 0 1-1.7-1.7c-.5-1.2-.4-4-.4-6.6s-.1-5.4.4-6.6a3 3 0 0 1 1.7-1.7C5 3.2 7.8 3.3 10 3.3s5-.1 6.2.4a3 3 0 0 1 1.7 1.7c.5 1.2.4 4 .4 6.6s.1 5.4-.4 6.6z"/></symbol>
+    <symbol id="i-tt" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-1.8-2.5V9.8a5.7 5.7 0 1 0 4.9 5.6V9.1a7.4 7.4 0 0 0 4.3 1.4V7.4a4.3 4.3 0 0 1-3.2-1.6z"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path fill="currentColor" d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.2-8.3L1.8 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.3 4.7H5.5l11.2 14.5z"/></symbol>
+    <symbol id="i-discord" viewBox="0 0 24 24"><path fill="currentColor" d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.4 18.4 0 0 0-5.6 0L8.6 3a19.7 19.7 0 0 0-4.9 1.4C.6 9 0 13.6.3 18.1A19.9 19.9 0 0 0 6.3 21l1.3-2.1a12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 11.9 0l.5.4a12.9 12.9 0 0 1-2 1l1.3 2.1a19.8 19.8 0 0 0 6-3c.5-5.2-.8-9.7-3.5-13.6zM8.5 15.3c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.2 1.1 2.1 2.4-.9 2.4-2.1 2.4zm7 0c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.2 1.1 2.1 2.4-.9 2.4-2.1 2.4z"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 3 4.5 6.6 4.5c2 0 3.3 1 4.1 2.2l1.3 1.8 1.3-1.8c.8-1.2 2.1-2.2 4.1-2.2 3.6 0 5.7 3.7 4.2 7.2C19.5 16.4 12 21 12 21z"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></symbol>
+  </defs>
+</svg>
+
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
